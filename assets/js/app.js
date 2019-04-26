@@ -83,8 +83,8 @@ $("#get_code_btn").click(function get_code_func() {
                                 $("#get_code_btn").html("(" + time1 + "秒)");
                             } else {
                                 clearInterval(setTime);
-                                $("#get_code_btn").html("重新获取");
                                 $("#get_code_btn").removeAttr("disabled");
+                                $("#get_code_btn").html("重新获取");
                                 $("#get_code_btn").bind("click", get_code_func);
                             }
                         }, 1000);
@@ -133,7 +133,7 @@ $("#onload_phone_btn").click(function () {
             success: function (load_back) {
                 if (load_back.code == 3008) {
                     $.cookie("user_token", load_back.data.token, { path: "/" });
-                    window.location.href = "http://localhost:8009/user_center";
+                    window.location.href = "http://localhost:8008/user_center";
                 } else {
                     error_info_fuc(load_area, load_back.msg)
 
