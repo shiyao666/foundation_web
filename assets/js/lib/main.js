@@ -1,11 +1,6 @@
 import $ from 'jquery';
 $(document).ready(
     function () {
-
-
-
-
-
         var jsload_all = {
             nprogress: true,
             cookie: true
@@ -22,7 +17,6 @@ $(document).ready(
                 console.log("加载cookie完成");
                 main1();
             });
-
             return;
         }
         // 调用接口

@@ -22,10 +22,10 @@ $(document).foundation();
 
 // 输入信息错误返回情况
 function error_info_fuc(e_id, info_text) {
-    e_id.append('<div class="large-6 medium-6 small-12 cell" id="phone_error_box"> <div data-alert class= "callout alert small "  data-closable ><h5 id="phone_login_alert">' + info_text + '</h5><button class="close-button" aria-label="Dismiss alert" type="button" data-close><span aria-hidden="true">&times;</span></button></div> ');
+    e_id.append('<div class="large-6 medium-6 small-12 cell" id="phone_error_box"> <div data-alert class= "callout alert small "  data-closable ><h6 id="phone_login_alert">' + info_text + '</h6><button class="close-button" aria-label="Dismiss alert" type="button" data-close><span aria-hidden="true">&times;</span></button></div> ');
 }
 function success(s_id, s_info) {
-    s_id.append('<div class="large-6 medium-6 small-12 cell" id="phone_success_box"><div class="success callout"><h5>' + s_info + '</h5><button class="close-button" aria-label="Dismiss alert" type="button" data-close><span aria-hidden="true">&times;</span></button></div></div>');
+    s_id.append('<div class="large-6 medium-6 small-12 cell" id="phone_success_box"><div class="success callout"><h6>' + s_info + '</h6><button class="close-button" aria-label="Dismiss alert" type="button" data-close><span aria-hidden="true">&times;</span></button></div></div>');
 }
 // 手机号验证错误信息列表
 var phone_erro_info = {
